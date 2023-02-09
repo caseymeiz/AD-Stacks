@@ -36,6 +36,6 @@ pip install -r requirements.txt
 ```
 
 ## Spawn some cars, make them move, and save some images
-https://carla.readthedocs.io/en/latest/build_docker/
+https://carla.readthedocs.io/en/latest/tuto_first_steps/
 
 Run with docker image and connect on port 2000
