@@ -14,5 +14,27 @@ cd carla-autoware && ./build.sh
 roslaunch carla_autoware_agent carla_autoware_agent.launch town:=Town01
 ```
 
-TODO
-Subscribe to objects detected with ROS
+## Collecting data
+
+Make sure agent is running in the background
+```shell
+roslaunch carla_autoware_agent carla_autoware_agent.launch town:=Town01 > /dev/null 2>&1 & 
+```
+
+Find the topic
+
+```shell
+rostopic list
+```
+
+`/detected/objects`
+
+Save the objects to file
+```shell
+rostopic echo /topic_name >> mydata.txt
+```
+
+Move it off the docker image
+```shell
+rostopic echo /topic_name
+```
