@@ -13,3 +13,6 @@ cd carla-autoware && ./build.sh
 ./run.sh
 roslaunch carla_autoware_agent carla_autoware_agent.launch town:=Town01
 ```
+
+TODO
+Subscribe to objects detected with ROS
