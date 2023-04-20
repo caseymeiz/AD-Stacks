@@ -2,3 +2,4 @@ carla/out
 
 .idea/
 carla/venv
+autoware/venv
